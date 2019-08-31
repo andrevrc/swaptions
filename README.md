@@ -10,10 +10,10 @@ No projeto_1, foi analisado o perfilamento dessa aplicação utilizando o Gprof.
 
 Para executar o projeto, basta executar o comando *make* no diretório *src*. Após isso, pode-se chamar o *./swaption* passando os parâmetros necessários. Os parâmetros são:
 
-- **ns:**​ referente ao número de swaptions que o algoritmo irá gerar aleatoriamente.
-- **sm:**​ número de simulações que serão executados para cada swaption gerado.
-- **nt:**​ número de threads que serão usados. Esse parâmetro é opcional e por padrão é usado apenas 1 thread.
-- **sd:** semente de geração de números aleatórios usados. Caso não seja informado, o Swaptions pega um número padrão dele.
+- **ns**:​ referente ao número de swaptions que o algoritmo irá gerar aleatoriamente.
+- **sm**:​ número de simulações que serão executados para cada swaption gerado.
+- **nt**:​ número de threads que serão usados. Esse parâmetro é opcional e por padrão é usado apenas 1 thread.
+- **sd**: semente de geração de números aleatórios usados. Caso não seja informado, o Swaptions pega um número padrão dele.
 
 Para rodar o perfilamento segue a sequência de comandos:
 
