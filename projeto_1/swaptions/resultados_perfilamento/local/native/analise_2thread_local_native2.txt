@@ -1,0 +1,85 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 47.04    103.71   103.71  4717614     0.00     0.00  HJM_SimPath_Forward_Blocking(double**, int, int, double, double*, double*, double**, long*, int)
+ 23.11    154.66    50.95 12190098     0.00     0.00  Discount_Factors_Blocking(double*, int, double, double*, int)
+ 13.32    184.01    29.36 3600480553     0.00     0.00  CumNormalInv(double)
+  6.70    198.77    14.76 3680256409     0.00     0.00  RanUnif(long*)
+  4.76    209.26    10.49  7880706     0.00     0.00  serialB(double**, double**, int, int, int)
+  4.42    219.01     9.75       98     0.10     2.24  HJM_Swaption_Blocking(double*, double, double, double, double, double, int, int, double, double*, double**, long, long, int, int)
+  0.33    219.74     0.73                             frame_dummy
+  0.21    220.20     0.46 68911633     0.00     0.00  dMax(double, double)
+  0.07    220.36     0.16  9904937     0.00     0.00  dmatrix(long, long, long, long)
+  0.03    220.43     0.07 10581133     0.00     0.00  free_dvector(double*, long, long)
+  0.02    220.48     0.05  7738210     0.00     0.00  free_dmatrix(double**, long, long, long, long)
+  0.00    220.49     0.01  7698046     0.00     0.00  dvector(long, long)
+  0.00    220.49     0.01                             icdf_baseline(int, double*, double*)
+  0.00    220.49     0.00      127     0.00     0.00  HJM_Yield_to_Forward(double*, int, double*)
+  0.00    220.49     0.00      122     0.00     0.00  HJM_Drifts(double*, double**, int, int, double, double**)
+  0.00    220.49     0.00        1     0.00     0.00  _GLOBAL__sub_I_NUM_TRIALS
+  0.00    220.49     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00    220.49     0.00                             HJM_Factors(double**, int, int, double*, double**)
+  0.00    220.49     0.00                             print_usage(char*)
+  0.00    220.49     0.00                             free_ivector(int*, long, long)
+  0.00    220.49     0.00                             Discount_Factors(double*, int, double, double*)
+  0.00    220.49     0.00                             HJM_Correlations(double**, int, int, double**)
+  0.00    220.49     0.00                             HJM_SimPath_Yield(double**, int, int, double, double*, double**, long*)
+  0.00    220.49     0.00                             HJM_SimPath_Forward(double**, int, int, double, double*, double*, double**, long*)
+  0.00    220.49     0.00                             Discount_Factors_opt(double*, int, double, double*)
+  0.00    220.49     0.00                             HJM_Forward_to_Yield(double*, int, double*)
+  0.00    220.49     0.00                             choldc(double**, int)
+  0.00    220.49     0.00                             gaussj(double**, int, double**, int)
+  0.00    220.49     0.00                             worker(void*)
+  0.00    220.49     0.00                             ivector(long, long)
+  0.00    220.49     0.00                             nrerror(char const*)
+  0.00    220.49     0.00                             __do_global_dtors_aux
+  0.00    220.49     0.00                             __do_global_dtors_aux_fini_array_entry
+  0.00    220.49     0.00                             __frame_dummy_init_array_entry
+  0.00    220.49     0.00                             __gmon_start__
+  0.00    220.49     0.00                             __libc_csu_fini
+  0.00    220.49     0.00                             __libc_csu_init
+  0.00    220.49     0.00                             _dl_relocate_static_pie
+  0.00    220.49     0.00                             _fini
+  0.00    220.49     0.00                             _init
+  0.00    220.49     0.00                             _start
+  0.00    220.49     0.00                             atexit
+  0.00    220.49     0.00                             data_start
+  0.00    220.49     0.00                             deregister_tm_clones
+  0.00    220.49     0.00                             etext
+  0.00    220.49     0.00                             main
+  0.00    220.49     0.00                             register_tm_clones
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
